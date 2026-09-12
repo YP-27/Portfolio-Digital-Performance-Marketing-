@@ -176,6 +176,8 @@
 
   /* ---------- SKILLS ---------- */
   .skill-groups{display:grid; grid-template-columns:repeat(2,1fr); gap:36px 48px;}
+  .skill-groups.cols-3{grid-template-columns:repeat(3,1fr);}
+  @media (max-width:900px){ .skill-groups.cols-3{grid-template-columns:repeat(2,1fr);} }
   @media (max-width:760px){ .skill-groups{grid-template-columns:1fr;} }
   .skill-group h4{font-size:0.95rem; font-weight:600; margin-bottom:14px; color:var(--ink);}
   .chips{display:flex; flex-wrap:wrap; gap:10px;}
@@ -258,7 +260,7 @@
       <div class="hstat"><div class="num" data-count="1023">0</div><div class="lbl">Leads generated, FY26</div></div>
       <div class="hstat"><div class="num" data-count="47.52" data-prefix="₹" data-decimals="2">0</div><div class="lbl">Blended cost per lead</div></div>
       <div class="hstat"><div class="num" data-count="180000" data-suffix="+"  >0</div><div class="lbl">Monthly LinkedIn impressions, from 0</div></div>
-      <div class="hstat"><div class="num" data-count="7">0</div><div class="lbl">Websites built end-to-end</div></div>
+      <div class="hstat"><div class="num" data-count="8">0</div><div class="lbl">Websites built end-to-end</div></div>
     </div>
   </div>
 </section>
@@ -291,12 +293,12 @@
         <div class="tl-item">
           <div class="role">Sales Associate</div>
           <div class="org">Starline (Maruti Suzuki)</div>
-          <div class="period">2023, 3 months</div>
+          <div class="period">Aug 2023 — Dec 2023</div>
         </div>
         <div class="tl-item">
           <div class="role">Esports Team Manager</div>
           <div class="org">Dexterity In Alliance</div>
-          <div class="period">2021 — 2023</div>
+          <div class="period">Jan 2021 — Jul 2023</div>
         </div>
       </div>
     </div>
@@ -350,13 +352,21 @@
       <div class="kicker">Skills &amp; Tools</div>
       <h2>What I actually use, week to week.</h2>
     </div>
-    <div class="skill-groups">
+    <div class="skill-groups cols-3">
       <div class="skill-group">
         <h4>Performance Marketing</h4>
         <div class="chips">
           <div class="chip">Meta Ads</div><div class="chip">Google Ads</div><div class="chip">Lead Generation</div>
           <div class="chip">BOFU Optimization</div><div class="chip">Audience Targeting</div><div class="chip">A/B Testing</div>
           <div class="chip">Retargeting</div><div class="chip">CPL Optimization</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Affiliate Marketing</h4>
+        <div class="chips">
+          <div class="chip">Affiliate Strategy</div><div class="chip">Content-Based Affiliate Marketing</div>
+          <div class="chip">Affiliate Relationship Management</div><div class="chip">Influencer &amp; Partnership Marketing</div>
+          <div class="chip">Coupon &amp; Deal Campaigns</div><div class="chip">Performance Analysis &amp; Reporting</div>
         </div>
       </div>
       <div class="skill-group">
@@ -370,7 +380,16 @@
         <h4>Content &amp; Brand</h4>
         <div class="chips">
           <div class="chip">Ad Copywriting</div><div class="chip">Video Scripts (YT)</div><div class="chip">Executive LinkedIn</div>
-          <div class="chip">Email Marketing (Zoho)</div><div class="chip">Blog Strategy</div>
+          <div class="chip">Blog Strategy</div><div class="chip">Brand Content Strategy</div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Email Marketing &amp; Outreach</h4>
+        <div class="chips">
+          <div class="chip">Cold Email Outreach</div><div class="chip">B2B Email Outreach</div>
+          <div class="chip">Email Campaign Strategy</div><div class="chip">Email Automation (Mailchimp)</div>
+          <div class="chip">Audience Segmentation</div><div class="chip">Subject Line Optimization</div>
+          <div class="chip">Open Rate &amp; CTR Optimization</div>
         </div>
       </div>
       <div class="skill-group">
@@ -628,6 +647,7 @@
     {plat:'Wix', name:'sbvsscientific.com', desc:'Whole website built on Wix for Sri Bala Venkata Sai Scientifics, with a brand palette pulled from their logo.', url:'https://www.sbvsscientific.com/'},
     {plat:'WordPress', name:'amtskill.in/fotonvr', desc:'fotonVR partner page built on WordPress, working within heavy platform limitations.', url:'https://amtskill.in/fotonvr/'},
     {plat:'Claude + WordPress', name:'medionxr2.wordpress.com', desc:'Built from scratch using Claude + WordPress.', url:'https://medionxr2.wordpress.com/'},
+    {plat:'Coded', name:'skillstudiovr.com', desc:'Whole website built from scratch in code.', url:'https://skillstudiovr.com/'},
     {plat:'Collaboration', name:'RadiumXR website', desc:'Helped the RadiumXR team build their site, working very closely with the Director, not a solo build.', url:'#'}
   ];
   const siteGrid = document.getElementById('site-grid');
